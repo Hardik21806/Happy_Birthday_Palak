@@ -8,6 +8,8 @@ export default defineConfig(({ mode }) => {
       server: {
         port: 3000,
         host: '0.0.0.0',
+        // FIX: Allow the Render domain to access the app
+        allowedHosts: ['happy-birthday-palak.onrender.com'], 
       },
       plugins: [react()],
       define: {
